@@ -1,0 +1,161 @@
+html {
+}
+
+body {
+	background-color: pink!important;
+}
+
+#container {
+  margin: 0 auto;
+  width: 640px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+  background-color: lightblue;
+  border-bottom: 1px solid black;
+}
+
+#tabs {
+  float: left;
+  width: 640px;
+  background: lightblue;
+  border-bottom: 1px solid black;
+}
+
+#tabs ul {
+  margin: 0;
+  padding: 0;
+}
+
+#tabs ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+#tabs li a {
+  display: block;
+  float: left;
+  padding: 6px 10px;
+  color: black;
+  text-decoration: none;
+  border-right: 1px solid black;
+}
+
+#tabs li select {
+	-webkit-appearance: none;
+	border: 0;
+	border-left: 1px solid black;
+	padding: 5px 10px;
+	float: right;
+	background-color: lightblue;
+}
+
+#tabs li a:hover {
+  background: pink;
+}
+
+#intro {
+  background-color: white;
+  padding: 40px 20px; 
+}
+
+#theme {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+#theme iframe {
+  border: 0px;
+}
+
+#screencaps {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  height: 420px;
+}
+
+ul.gallery li {
+    list-style-type: none;
+    float:left;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+ul.gallery li a img {
+    float:left;
+    width: 220px;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+ul.gallery li a:hover img {
+    /*-webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    transform-origin: bottom left;*/
+    -webkit-transform: scale(2.0);
+    -moz-transform: scale(1.5);
+    /*transform: scale(1.5) rotate(360deg);*/
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+#footer {
+  background-color: lightblue;
+  text-align: right;
+  padding: 20px;
+}
+/*
+#droppable {
+  width: 150px;
+}
+
+#draggable {
+  width: 200px;
+}
+
+#bunny {
+  width: 200px;
+}*/
+#characters {
+	background-color: white;
+	padding: 20px 20px;
+    height: 1760px;
+}
+
+#characters ul li {
+  list-style-type: none;
+  float: left;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px solid black;
+}
+
+label {
+	display: inline-block;
+}
+
+#formerino {
+	background-color: white;
+	padding: 20px 20px;
+}
+
+#results {
+	background-color: white;
+	padding: 20px 20px;
+}
+
+#episodes {
+	background-color: white;
+	padding: 20px 20px;
+}
+
+#comments {
+	background-color: white;
+	padding: 20px 20px;
+}

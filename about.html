@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Gekkan Shoujo Nozaki-kun!</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="icon.ico">
+	<link rel="stylesheet" href="mystyle.css">
+	<!-- Latest compiled and minified CSS--> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<!--Optional theme 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/jumbotron-narrow.min.css"
+
+	 Latest compiled and minified JavaScript 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#chiyodialog").dialog({autoOpen:false});
+		$("#chiyo").click(function() {
+			$("#chiyodialog").dialog('open');});
+		$("#nozakidialog").dialog({autoOpen:false});
+		$("#nozaki").click(function() {
+			$("#nozakidialog").dialog('open');});
+		$("#mamikodialog").dialog({autoOpen:false});
+		$("#mamiko").click(function() {
+			$("#mamikodialog").dialog('open');});
+		$("#loreleidialog").dialog({autoOpen:false});
+		$("#lorelei").click(function() {
+			$("#loreleidialog").dialog('open');});
+		$("#princedialog").dialog({autoOpen:false});
+		$("#prince").click(function() {
+			$("#princedialog").dialog('open');});
+		$("#manletdialog").dialog({autoOpen:false});
+		$("#manlet").click(function() {
+			$("#manletdialog").dialog('open');});
+		$("#wakadialog").dialog({autoOpen:false});
+		$("#waka").click(function() {
+			$("#wakadialog").dialog('open');});
+
+		$("#fonts").change(function() {
+			$('.changeme').css("font-family", $(this).val());
+		});	
+		
+	});
+	</script>
+</head>
+
+<body>
+	<div id="container" class="changeme">  
+		<div id="header">
+			<h1>
+				Gekkan Shoujo Nozaki-kun
+			</h1>
+		</div>
+
+		<div id="tabs">
+			<ul class="nav">
+				<li><a href="../ms4/index.html">Home</a></li>
+ 				<li><a href="../ms4/about.html">About</a></li>
+				<li><a href="../ms4/form.php">Tanuki</a></li>
+				<li><a href="../ms4/episodes.php">Episodes</a></li>
+				<li><a href="../ms4/comments.php">Guestbook</a></li>
+				<li><a href="#">Poll</a></li>
+				<li><select id="fonts">
+					<option value="Comic Sans MS">Comic Sans</option>
+					<option value="Arial">Arial</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Courier New">Courier New</option>
+					<option value="Tahoma">Tahoma</option>
+					<option value="Impact">Impact</option>
+				</select></li>
+			</ul>
+		</div>
+
+			<div id="intro">
+				<h3><strong>Synopsis</strong></h3>
+				<p>High school student Chiyo Sakura has a crush on schoolmate Umetarō Nozaki, but when she confesses her love to him, he mistakes her for a fan and gives her an autograph. When she says that she always wants to be with him, he invites her to his house and has her help on some drawings. Chiyo discovers that Nozaki is actually a renowned shōjo manga artist named Sakiko Yumeno. She then agrees to be his assistant in order to get closer to him. As they work on his manga Let's Fall in Love (恋しよっ Koi Shiyo?, Let's Have a Romance), they encounter other schoolmates who assist them or serve as inspirations for characters in the stories.</p>
+				<p>(Source: Wikipedia)</p>		
+			</div>
+
+		<div id="characters">
+			<h3>Characters</h3>
+			<p>Click each character for a brief description</p>
+			<ul>
+				<li><input type="image" id="chiyo" src="http://cdn.myanimelist.net/images/characters/13/257285.jpg" name="Sakura Chiyo" alt="Chiyorin" width="225"></li>
+				<li><input type="image" id="nozaki" src="http://cdn.myanimelist.net/images/characters/3/255373.jpg" name="Umetaro Nozaki" alt="Yumeno Sensei" width="225"></li>
+				<li><input type="image" id="mamiko" src="http://cdn.myanimelist.net/images/characters/10/252149.jpg" name="Mikorin" alt="Best Girl"  width="225"></li>
+				<li><input type="image" id="lorelei" src="http://cdn.myanimelist.net/images/characters/13/258877.jpg" name="Yuzuki Seo" alt="Miyuki Sawashiro" width="225"></li>
+				<li><input type="image" id="prince" src="http://cdn.myanimelist.net/images/characters/9/254001.jpg" name="KASHIMA" alt="KASHIMAAAA"  width="225"></li>
+				<li><input type="image" id="manlet" src="http://cdn.myanimelist.net/images/characters/12/257291.jpg" name="Masayuki Hori" alt="Hori Senpai" width="225"></li>
+				<li><input type="image" id="waka" src="http://cdn.myanimelist.net/images/characters/9/257293.jpg" name="Hirotaka Wakamatsu" alt="WAKAAAA" width="225"></li>
+			</ul>
+		</div>
+		<div id="chiyodialog" title="Sakura Chiyo">
+			<p>The viewpoint character of the series, Sakura is a high school girl with a crush on Nozaki, but when her confession is misinterpreted, she ends up becoming Nozaki's inker assistant. She is in class 2-A and a member of the school's art club. She is petite, and on her head, she wears two large ribbons that have a polka dot pattern, of which it becomes Nozaki's trademark of Chiyo and names a screen tone after her.</p>
+		</div>
+		<div id="nozakidialog" title="Nozaki Umetaro">
+			<p>Umetarou is the high school student that is the object of Chiyo Sakura's affection. He is secretly a manga artist named Sakiko Yumeno, the creator of the shoujo manga "Let's Love~". This manga is published in the magazine called Monthly Shoujo Romance. Despite making a romance-oriented manga, he has no personal experience in love, and his story ideas are often ridiculous and farfetched. He appreciates Chiyo's drawing ability but is oblivious to her feelings.</p>
+		</div>
+		<div id="mamikodialog" title="Mikoshiba Mikoto">
+			<p>Nozaki's assistant who is in charge of drawing like accessories, flowers, and effects. He looks and acts like a playboy but is actually a shy person and is ashamed of his own flirtatious words.</p>
+		</div>
+		<div id="loreleidialog" title="Seo Yuzuki">
+			<p>Sakura's classmate who can easily offend people. She is a member of the choir club, and her singing voice is beautiful enough that she is referred to as "Lorelei."</p>
+		</div>
+		<div id="princedialog" title="Kashima Yuu">
+			<p>The prince of the school, even though she is a female. She is very popular among girls and flirts with them. She also belongs to the drama club. She was Mikoshiba's classmate and rivaled her during their first year, but now they are friends. She has a habit of skipping class and club duties that she would find herself in trouble with her drama club president, Hori, who literally has to go rough on her. Ironically, she seemly likes being roughed upon by the latter and may even suggest that she may have some degree of feelings for him.</p>
+		</div>
+		<div id="manletdialog" title="Hori Masayuki">
+			<p>A third year student and the president of the drama club. He is good at acting and use to appear in plays but stopped due to his short height. He is now in charge of props. Kashima always causes him trouble, but he is often like a doting parent to her. He is also Nozaki's assistant who is in charge of the backgrounds.</p>
+		</div>
+		<div id="wakadialog" title="Wakamatsu Hirotaka">
+			<p>Freshman who belongs to the basketball club and has known Nozaki since middle school since they were in the same basketball club. He played against Seo in a basketball match. Her rough play made him unable to sleep. He was able to sleep soundly, later, thanks to the voice of Lorelei, though he doesn't know her true identity.</p>
+		</div>
+				
+		<div id="footer">
+			©James Wang<br>
+			jqw3ha@virginia.edu 
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
+
