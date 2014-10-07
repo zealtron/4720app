@@ -47,12 +47,11 @@
 
 		<div id="tabs">
 			<ul class="nav">
-				<li><a href="../ms4/index.html">Home</a></li>
- 				<li><a href="../ms4/about.html">About</a></li>
-				<li><a href="../ms4/form.php">Tanuki</a></li>
-				<li><a href="../ms4/episodes.php">Episodes</a></li>
-				<li><a href="../ms4/comments.php">Guestbook</a></li>
-				<li><a href="#">Poll</a></li>
+				<li><a href="../ms5/index.html">Home</a></li>
+ 				<li><a href="../ms5/about.html">About</a></li>
+				<li><a href="../ms5/form.php">Tanuki</a></li>
+				<li><a href="../ms5/episodes.php">Episodes</a></li>
+				<li><a href="https://festive-cistern-726.appspot.com/">Guestbook</a></li>
 				<li><select id="fonts">
 					<option value="Comic Sans MS">Comic Sans</option>
 					<option value="Arial">Arial</option>
