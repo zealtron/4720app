@@ -2,31 +2,72 @@
 {% autoescape true %}
 <html>
   <head>
+    <title>Gekkan Shoujo Nozaki-kun!</title>
+    <meta charset="UTF-8"> 
+    <link rel="shortcut icon" href="icon.ico">
+    <!-- Latest compiled and minified CSS--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
   </head>
+	<script>
+	$(document).ready(function() {	
+		$("#fonts").change(function() {
+			$('.changeme').css("font-family", $(this).val());
+		});	
+				
+	});
+	</script>
   <body>
-    {% for greeting in greetings %}
-      {% if greeting.author %}
-        <b>{{ greeting.author.nickname() }}</b> wrote:
-      {% else %}
-       An anonymous person wrote:
-      {% endif %}
-      <blockquote>{{ greeting.content }}</blockquote>
-    {% endfor %}
+    <div id="container" class="changeme">  
+		<div id="header">
+			<h1>
+				Gekkan Shoujo Nozaki-kun
+			</h1>
+		</div>
 
-    <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign Guestbook"></div>
-    </form>
-
-    <hr>
-
-    <form>Guestbook name:
-      <input value="{{ guestbook_name }}" name="guestbook_name">
-      <input type="submit" value="switch">
-    </form>
-
-    <a href="{{ url|safe }}">{{ url_linktext }}</a>
+		<div id="tabs">
+			<ul class="nav">
+				<li><a href="https://plato.cs.virginia.edu/~jqw3ha/ms5/index.html">Home</a></li>
+ 				<li><a href="https://plato.cs.virginia.edu/~jqw3ha/ms5/about.html">About</a></li>
+				<li><a href="https://plato.cs.virginia.edu/~jqw3ha/ms5/form.php">Tanuki</a></li>
+				<li><a href="https://plato.cs.virginia.edu/~jqw3ha/ms5/episodes.php">Episodes</a></li>
+				<li><a href="https://festive-cistern-726.appspot.com">Guestbook</a></li>
+				<li><select id="fonts">
+					<option value="Comic Sans MS">Comic Sans</option>
+					<option value="Arial">Arial</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Courier New">Courier New</option>
+					<option value="Tahoma">Tahoma</option>
+					<option value="Impact">Impact</option>
+				</select></li>
+			</ul>
+		</div>
+		<div id="comments">
+			<h2>Questions, Comments, Concerns!</h2><br>
+        	{% for greeting in greetings %}
+        	{% if greeting.author %}
+        	<b>{{ greeting.author.nickname() }}</b> wrote:
+        	{% else %}
+        	An anonymous person wrote:
+        	{% endif %}
+        	<blockquote>{{ greeting.content }}</blockquote>
+        	{% endfor %}
+		
+			<form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
+      			<div><textarea name="content" rows="3" cols="60"></textarea></div>
+      			<div><input type="submit" value="Sign Guestbook"></div>
+    		</form>	
+	
+    		<a href="{{ url|safe }}">{{ url_linktext }}</a>
+		</div>
+		<div id="footer">
+			©James Wang<br>
+			jqw3ha@virginia.edu 
+		</div>
+	</div>
 
   </body>
 </html>
