@@ -21,17 +21,16 @@
 		$("#fonts").change(function() {
 			$('.changeme').css("font-family", $(this).val());
 		});	
-		
-		$("#maeno").click(function() {
+	
+		$('#poll_submit').click(function() {
 			$.ajax({
-				url: 'getTanuki.php',
-				data: {tanuki: $("#tanuki").val()},
-				success: function(data){
-					$('#results').html(data);
+				url: 'pollsubmit.php',
+				data: {id: "1", vote: $('input:radio[name=favchar]:checked').val()},
+				success: function(data) {
+					$('#poll_results').html(data);	
 				}
 			});
 		});
-	
 				
 	});
 	</script>	
@@ -64,16 +63,34 @@
 			</ul>
 		</div>
 
-		<div id="formerino">
-			<img src="http://puu.sh/bKl2r/0f2871d52f.png" alt="tanuki" width="600">
-			<h2>Tanuki Calculator!</h2>
-			<label for="tanuki">Tanuki</label>
-			<input type="text" id="tanuki" name="tanuki" placeholder="ex. 3">
-			<button type="submit" class="btn btn-default" id="maeno">Go!</button>
+		<div id="poll">
+			<h2>Who is your favorite character?</h2>
+			<br>
+			<input type="radio" name="favchar" value="Sakura Chiyo">
+			Sakura Chiyo
+			<br>
+			<input type="radio" name="favchar" value="Nozaki Umetaro">
+			Nozaki Umetaro
+			<br>
+			<input type="radio" name="favchar" value="Mikoshiba Mikoto">
+			Mikoshiba Mikoto
+			<br>
+			<input type="radio" name="favchar" value="Yuzuki Seo">
+			Yuzuki Seo
+			<br>
+			<input type="radio" name="favchar" value="Kashima Yuu">
+			Kashima Yuu
+			<br>
+			<input type="radio" name="favchar" value="Hori Masayuki">
+			Hori Masayuki
+			<br>
+			<input type="radio" name="favchar" value="Wakamatsu Hirotaka">
+			Wakamatsu Hirotaka
+			<br>
+			<input id="poll_submit" type="submit" class="btn btn-default" value="vote">
+			<br>
+			<div id="poll_results"></div>
 		</div>
-
-		<div id="results"></div>
-		
 		
 
 		<div id="footer">
